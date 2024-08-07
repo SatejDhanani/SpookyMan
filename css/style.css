@@ -1,0 +1,33 @@
+/* Okay this will be explaining what im going to do here my pseudocode */ 
+
+/*first things first 
+
+-- This will be where i set up my margins and font 
+
+    - im thinking times new roman (something basic) 
+
+    - margin and padding of 0 
+    
+    -bordered box to announce the name of the game 
+
+--after that i'm setting up the body that will be inside of the html 
+
+    - I'll use a flex box here justify content center so that it can be well centered
+
+    i can create the height the system of set up and everything else that will go into detailing it 
+
+-- here i want to have the container that will share multiple traits. i think i'll call it .container or something like that 
+
+    --this one i will ahve to see to turly be able to mae but ill start with the pixels for the screen stuff like that 
+
+-- I want to make a place to maybe put in your name here, so you could maybe set up a leaderboard. I'm not super sure how hard this one will be but we will see. 
+
+    -- i want to attach this to an arra that the player can add to 
+
+-- ill make a timer next gives the player a couple seconds to do the task that we set up for them, in this instance it'll be chosing a letter
+
+-- ill make the box of letters right here 
+
+    -- itll be an array that i can use a foreach loop to iterate between. I thin that this one will be a little hard to implement so ill have to examine how i can do this one properly
+
+--finally i can make the actual hang man image right here. I think that i can use pictures of the hangman to make this and slowly reveal them with an on click function here 
