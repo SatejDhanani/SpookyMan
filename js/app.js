@@ -22,9 +22,13 @@ const guessButtonEl = document.getElementById('guess-button');
 const resetButtonEl = document.getElementById('reset-button');
 // message sent if the player has won or loss
 const messageEl = document.getElementById('message');
+//ghost element so i can move it
+const ghostMove = document.querySelector('#ghost')
 
 // Functions
 function init() {
+    //reset ghost position 
+    ghostMove.style.setProperty('grid-area', 'a')
     //this will grab which word from the words array 
   word = words[Math.floor(Math.random() * words.length)];
   // an empty array of just letters
@@ -52,13 +56,17 @@ function updateDisplay() {
   hangmanGraphicEl.textContent = `Incorrect Guesses: ${incorrectGuesses}`;
 }
 
+let position = ['b','c','d','e','f','g']
+// let count = 0
 
 function handleGuess() {
   const guess = letterInputEl.value.toLowerCase();
   //have to make sure that all letters are used despite caps 
   console.log('User guessed:', guess); // Debugging line for console log 
   letterInputEl.value = '';
-
+    // console.log(ghostMove, 'ghost move')
+    //just an example of how to move the ghost 
+    // count++
   // Check if the input is valid
   if (guess && !guessedLetters.includes(guess) && guess.length === 1) {
     guessedLetters.push(guess);
@@ -70,6 +78,7 @@ function handleGuess() {
         console.log('Game won!'); // Debugging line for console log 
       }
     } else {
+        ghostMove.style.setProperty('grid-area', position[incorrectGuesses])
       incorrectGuesses++;
       console.log('Incorrect guess count:', incorrectGuesses); // Debugging line for console log 
       if (incorrectGuesses >= maxGuesses) {

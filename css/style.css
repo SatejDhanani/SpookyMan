@@ -63,12 +63,12 @@ body {
   
   .victim {
     display: grid;
-    grid-template-areas: "a b c d e f g";
+    grid-template-areas: "a b c d e f g h";
   }
 
 #scaredKid {
     width: 200px; 
-    grid-area: g;
+    grid-area: h;
 }
 
 #ghost {
