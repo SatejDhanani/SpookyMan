@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script defer src="./app.js"></script>
-    <link rel="stylesheet" href="/style.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Man!!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/app.js"></script>
+  <title>Spooky Mann Game</title>
 </head>
 <body>
-    <div>
-        game mode will go here 
-    </div>
-
-    <div>
-        Hangman Jpeg 
-    </div>
-
-    <div>
-        game box goes here 
-    </div>
-    <div>
-        correct answer goes here 
-    </div>
+  <h1>Spooky Man Game</h1>
+  <div id="hangman">
+    <img id="head" src="https://studio.code.org/v3/assets/6Q3akuzqZV6quZrPM4MH0urxUDI_fp4Zuem4dH5JXis/head1.png" style="display:none;">
+    <img id="body" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5w3whzoDSjJGnc5way4YlHziCcZe8VTK5kA&s" style="display:none;">
+    <img id="left-arm" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0PPRSTQZFAACugR2FI6yshUC4WN_wmPi_Rg&s" style="display:none;">
+    <img id="right-arm" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Hangman-4.png" style="display:none;">
+    <img id="left-leg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgBduDYM-O8ysKu0k3vKErEBSu4vvc5c9Usw&s" style="display:none;">
+    <img id="right-leg" src="https://i0.wp.com/pearlyarts.com/wp-content/uploads/2022/10/Ghost-Clipart-3-WM.png?fit=1001%2C1001&ssl=1" style="display:none;">
+  </div>
+  <div class="victim">
+    <img id="ghost" src="https://static.vecteezy.com/system/resources/previews/012/042/239/non_2x/halloween-ghost-clipart-halloween-party-free-png.png">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    <div class="e"></div>
+    <img id="scaredKid" src="https://archive.org/download/afraid-boy-clipart-9/afraid-boy-clipart-9.png">
+  </div>
+  <div id="game-board">
+    <div id="word-display"></div>
+    <div id="guessed-letters"></div>
+    <div id="hangman-graphic"></div>
+  </div>
+  
+  <div id="input-area">
+    <input type="text" id="letter-input" maxlength="1" placeholder="Guess a letter">
+    <button id="guess-button">Guess</button>
+    <button id="reset-button">Reset</button>
+  </div>
+  
+  <div id="message"></div>
+  
 </body>
 </html>

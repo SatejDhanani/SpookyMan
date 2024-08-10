@@ -11,3 +11,5 @@ I am going to be writing this file in 3 different files.
 * Css (style.css)
 
 in Javascript i will be utilizing a couple different functions in order to get a players timer, the array that will contain the random words, and many other details that the user is going to be able to see while playing the game. 
+
+The game will be 
