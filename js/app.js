@@ -1,5 +1,5 @@
 // Constants
-const words = ["javascript", "pokemon", "coding", "programming", "developer"];
+const words = ["Program", "pokemon", "coding", "Phoenix", "developer","Texas","Arizona"];
 let word = "";
 let guessedLetters = [];
 let incorrectGuesses = 0;
@@ -62,7 +62,7 @@ let position = ['b','c','d','e','f','g']
 function handleGuess() {
   const guess = letterInputEl.value.toLowerCase();
   //have to make sure that all letters are used despite caps 
-  console.log('User guessed:', guess); // Debugging line for console log 
+  //console.log('User guessed:', guess); // Debugging line for console log 
   letterInputEl.value = '';
     // console.log(ghostMove, 'ghost move')
     //just an example of how to move the ghost 
@@ -72,15 +72,15 @@ function handleGuess() {
     guessedLetters.push(guess);
     
     if (word.includes(guess)) {
-      console.log('Correct guess:', guess); // Debugging line for console log 
+     // console.log('Correct guess:', guess); // Debugging line for console log 
       if (word.split('').every(letter => guessedLetters.includes(letter))) {
         messageEl.textContent = "You won!";
-        console.log('Game won!'); // Debugging line for console log 
+       // console.log('Game won!'); // Debugging line for console log 
       }
     } else {
         ghostMove.style.setProperty('grid-area', position[incorrectGuesses])
       incorrectGuesses++;
-      console.log('Incorrect guess count:', incorrectGuesses); // Debugging line for console log 
+      //console.log('Incorrect guess count:', incorrectGuesses); // Debugging line for console log 
       if (incorrectGuesses >= maxGuesses) {
         messageEl.textContent = `Game Over! The word was "${word}".`;
         console.log('Game over. Word was:', word); // Debugging line for console log 
