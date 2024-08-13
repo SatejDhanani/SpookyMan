@@ -4,7 +4,7 @@ let word = "";
 let guessedLetters = [];
 let incorrectGuesses = 0;
 const maxGuesses = 6;
-const parts = ['head', 'body', 'left-limb', 'right-limb', 'left-leg', 'right-leg']
+// const parts = ['head', 'body', 'left-limb', 'right-limb', 'left-leg', 'right-leg']
 
 // Cached element references
 //i think therer are going to be hella consts im going to make here 
@@ -62,25 +62,19 @@ let position = ['b','c','d','e','f','g']
 function handleGuess() {
   const guess = letterInputEl.value.toLowerCase();
   //have to make sure that all letters are used despite caps 
-  //console.log('User guessed:', guess); // Debugging line for console log 
   letterInputEl.value = '';
-    // console.log(ghostMove, 'ghost move')
     //just an example of how to move the ghost 
-    // count++
   // Check if the input is valid
   if (guess && !guessedLetters.includes(guess) && guess.length === 1) {
     guessedLetters.push(guess);
     
     if (word.includes(guess)) {
-     // console.log('Correct guess:', guess); // Debugging line for console log 
       if (word.split('').every(letter => guessedLetters.includes(letter))) {
         messageEl.textContent = "You won!";
-       // console.log('Game won!'); // Debugging line for console log 
       }
     } else {
         ghostMove.style.setProperty('grid-area', position[incorrectGuesses])
       incorrectGuesses++;
-      //console.log('Incorrect guess count:', incorrectGuesses); // Debugging line for console log 
       if (incorrectGuesses >= maxGuesses) {
         messageEl.textContent = `Game Over! The word was "${word}".`;
         console.log('Game over. Word was:', word); // Debugging line for console log 
@@ -107,3 +101,15 @@ resetButtonEl.addEventListener('click', resetGame);
 
 // Initialize the game when the page loads
 init();
+
+
+/*
+Code Cemetary 
+  //console.log('User guessed:', guess); // Debugging line for console log 
+    // console.log(ghostMove, 'ghost move')
+      //console.log('Incorrect guess count:', incorrectGuesses); // Debugging line for console log 
+     // console.log('Correct guess:', guess); // Debugging line for console log 
+       // console.log('Game won!'); // Debugging line for console log 
+    // count++
+
+*/

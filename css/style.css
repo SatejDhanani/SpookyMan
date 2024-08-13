@@ -28,9 +28,9 @@ body {
     margin-bottom: 20px;
   }
   
-  #hangman-graphic {
-    height: 100px;
-    margin-bottom: 20px;
+  #instructions {
+    display: flexbox;
+    justify-content: center;
   }
   
   #input-area {
