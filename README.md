@@ -3,6 +3,7 @@
 ### This is going to be where i document my intentions for the browser game that i will be creating. 
 This game is called *Spooky Man* and it will be spelling game that, if you lose a ghost will never find a person to scare! something like that atleast. 
 
+!["Game LOGO"](https://static.vecteezy.com/system/resources/previews/012/042/239/non_2x/halloween-ghost-clipart-halloween-party-free-png.png)
 ### Instructions to Play
 The game may be found here.
 https://satejdhanani.github.io/SpookyMan/
@@ -164,3 +165,9 @@ I think that there are a ton of places that i'll be able to improve this product
 2. I could use a border and different font (still complying with the accessibility element of the game)
 3. I think that there could be more room for little ghosts or ghouls at the bottom, extra art that emphasizes the nature of having a ghost on screen and a haloween game. 
 4. A big thing i could do is make the ghost and timmy move all the time. Constantly circling the screen, and rather than a fixed position i could essentially have the pace increase for the ghost. The time would be virtually the same, but the tension would be through the roof. I'm not sure how easy that is in just JS but it's something to consider. 
+
+## Credit where it is due
+Below are the sources that i used in order to create this game. 
+1. The ghost image came from https://static.vecteezy.com/system/resources/previews/012/042/239/non_2x/halloween-ghost-clipart-halloween-party-free-png.png This link found here. Thank you to the artist for making it. 
+2. The child came from https://archive.org/download/afraid-boy-clipart-9/afraid-boy-clipart-9.png this link right here. Thank you to archive.org for the image. 
+3. w3 schools and stack overflow werer both utilized in helping me understand concepts that i didn't otherwise. Such as the display grid found on the CSS Page. 
