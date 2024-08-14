@@ -3,7 +3,18 @@
 ### This is going to be where i document my intentions for the browser game that i will be creating. 
 This game is called *Spooky Man* and it will be spelling game that, if you lose a ghost will never find a person to scare! something like that atleast. 
 
+### Instructions to Play
+The game may be found here.
+https://satejdhanani.github.io/SpookyMan/
+- To play the game is really simple! There are only a couple things that you need to konw in order to play spooky man!
+1. The first is click onto the text box that allows you to type in letters. Labeled as *Guess* this is where you can put in any valid character, letters A-Z
+2. Hit the guess button! After you type a letter and hit guess there are two things that can happen. 
+> If the letter is correct, the ghost will stay in place and your letter will be placed in the coresponding position in the guessed letter seciond 
 
+>If your letter is incorrect, then the ghost will move further towards scared little timmy getting ever close to catching him. If you have too many incorrect guesses the ghost will catch timmy and the game will end. 
+
+3. Once the game ends wether its win or loss you can hit the reset button for the chance to play again, most likely with a different word. 
+Good luck and i hope timmy is okay!
 
 I am going to be writing this file in 3 different files. 
 * JavaScript (App.js)
@@ -138,3 +149,18 @@ This was the easiest section to write thankfully. Not too many things added here
 * it has the grid and the class for each
 * and it has the game board div that can be utilized for guessing
 > The ghost image is placed first and the scared kid is placed last because of their relative positions on the board. 
+
+## Future Plans (Stretch Goals)
+I think that there are a ton of places that i'll be able to improve this product. Starting with the game's engine and moving to the aesthetics created for it.
+#### How the game works 
+1. I think that i could add a hint feature that makes it a little bit easier in order to figure out the word. 
+2. I think that it wouldn't be too difficult to add a feature to create a leaaderboard for the players. I would make it such that how ever many correct words you get in a row you could iterate a variable called "score" or something 
+3. I think i could add some complexity to the game, the grid pattern is nice, and i bet i could do something where i could push the ghost back in some mecahnic, or timmy could chase the ghost in a special event if the player gets enough correct. 
+
+4. A more difficult goal could be to use an online ranking system in order for multiple players to have their leaderboard score shown. This is something i don't know how to do yet but could add a lot in terms of players finding enjoyment through competition
+
+#### Aesthetics 
+1. It would be relativly easy to add ainmations to the game. This should just be a matter of finding them online and pasting the code in depending on what we want to add. 
+2. I could use a border and different font (still complying with the accessibility element of the game)
+3. I think that there could be more room for little ghosts or ghouls at the bottom, extra art that emphasizes the nature of having a ghost on screen and a haloween game. 
+4. A big thing i could do is make the ghost and timmy move all the time. Constantly circling the screen, and rather than a fixed position i could essentially have the pace increase for the ghost. The time would be virtually the same, but the tension would be through the roof. I'm not sure how easy that is in just JS but it's something to consider. 
