@@ -77,7 +77,7 @@ function handleGuess() {
       incorrectGuesses++;
       if (incorrectGuesses >= maxGuesses) {
         messageEl.textContent = `Game Over! The word was "${word}".`;
-        console.log('Game over. Word was:', word); // Debugging line for console log 
+       // console.log('Game over. Word was:', word); // Debugging line for console log 
       if(incorrectGuesses === 0) {
         
       }  
@@ -87,7 +87,7 @@ function handleGuess() {
     
     updateDisplay();
   } else {
-    console.log('Invalid guess or letter already guessed'); // Debugging line for console log 
+   // console.log('Invalid guess or letter already guessed'); // Debugging line for console log 
   }
 }
 
